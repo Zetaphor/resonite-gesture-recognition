@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gesture Recognition System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="card">
+    <div class="card-header">
+      <h2 class="card-title">Gesture Recognition System</h2>
+    </div>
+    <div class="card-content">
+      <div class="space-y-4">
+        <canvas id="gestureCanvas" class="border"></canvas>
+
+        <div class="button-group">
+          <input type="text" id="gestureName" placeholder="Name your gesture" class="input">
+
+          <button id="saveButton" class="button" disabled>
+            Save Gesture
+          </button>
+
+          <button id="recognizeButton" class="button" disabled>
+            Recognize
+          </button>
+
+          <button id="clearButton" class="button button-outline">
+            Clear
+          </button>
+        </div>
+
+        <div class="info-section">
+          <p id="savedCount">Saved gestures: 0</p>
+
+          <div id="savedPatterns" class="saved-patterns">
+            <p class="font-medium">Saved Patterns:</p>
+            <div id="gestureList" class="gesture-list"></div>
+          </div>
+
+          <p id="matchResult" class="match-result"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
